@@ -1,0 +1,21 @@
+body{
+    width: 100vw;
+    height: 100vh; 
+    background-color: aquamarine;
+ }
+.nav-menu{
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin: 0 0 0 2rem;
+}
+img{
+    width: 100%;
+}
