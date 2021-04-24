@@ -1,9 +1,8 @@
 body{
     width: 100vw;
     height: 100vh; 
-    background-color: aquamarine;
- }
-.nav-menu{
+}
+.navbar{
     height: 5rem;
     display: flex;
     justify-content: space-around;
@@ -16,6 +15,40 @@ ul{
 li{
     margin: 0 0 0 2rem;
 }
-img{
+li:hover{
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1s;
+}
+.header-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-header{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.box{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2px;
+}
+.box-img img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
