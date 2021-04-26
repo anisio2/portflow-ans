@@ -1,0 +1,64 @@
+@media (max-width: 1200px){
+    .menu{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .footer-h3{
+        justify-content:center;
+        margin-top: 1rem;
+    }
+    .footer-paragraph{
+        justify-content:center;
+        margin-top: 1rem;
+    }
+    .box-img{
+        height:100%;
+    }
+}
+@media (max-width: 992px){
+    .container-header{
+        background-image: url(assets/img/laranja-azul-2.png);
+        height: 100%;
+        }
+    .navbar-ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .container-box{
+        display: flex;
+        flex-direction: column;
+}
+    .container-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+    .footer-img{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+}
+    .footer-text{
+        display: flex;
+        justify-content:center;
+        align-items:flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer-h3{
+        font-size: small;
+        justify-content: center;
+        margin-top: 0.6rem;
+    }
+    .footer-paragraph{
+        font-size:small;
+        justify-content: center;
+    }
+    .box-img{
+        height:100%;
+    }
+}

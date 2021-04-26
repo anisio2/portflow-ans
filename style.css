@@ -1,5 +1,4 @@
 body{
-    width: 100vw;
     height: 100vh; 
 }
 .navbar{
@@ -15,16 +14,41 @@ ul{
 li{
     margin: 0 0 0 2rem;
 }
+.menu {
+    top: 6%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 40px;
+    display: none;
+}
+.menu:before,
+.menu:after,
+.menu div {
+    background:black;
+    content: "";
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+}
+.menu:hover:before {
+    transform: translateY(12px) rotate(135deg);
+}
+.menu:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+.menu:hover div {
+    transform: scale(0);
+} 
 header{
-    width: 100%;
-    height: 100%;
-    margin: 1 1 1 1rem;
-
+    height: 100vh;
 }
 .container-header{
     background-image: url(assets/img/laranja\ azul\ recorte.png);
     height:100vh;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     display:flex;
     flex-direction: column;
@@ -35,7 +59,6 @@ header{
     background-repeat: no-repeat;
     display:flex;
     flex-direction: column;
-    color:red;
 }
 .header-h2{
     margin: 15rem 0rem 3rem 2rem;
@@ -60,15 +83,13 @@ header{
 }
 .box-img{
     margin: 12px;
-    width: 250px;
-    height: 250px;
+    height: 300px;
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
 .box-img img{
-    width: 250px;
-    height: 250px;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -77,23 +98,51 @@ footer{
     background-color:darkgrey;
 }
 .container-footer{
-    height: 130px;
+    height: 10rem;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items:center;
 }
+.footer-img{
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 .footer-img img{
-    display:inline-flex;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
     height:3vh;
     margin: 8px;
 }
 .footer-text{
     display: flex;
     justify-content:flex-start;
-    align-items: flex-start;
-    width: 40rem;
+    align-items:center;
+    width:60%;
+}
+.footer-h3{
+    margin-right: 1rem;
 }
 .footer-paragraph{
     font-size: 0.9rem;
-    margin:0 0 0 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.bnt-top{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:dimgrey;
+    position: fixed;
+    top: ;
+    left: ;
+    right: 30px;
+    bottom: 30px;
+}
+.bnt-top p{
+    color: white;
 }
