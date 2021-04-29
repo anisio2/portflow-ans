@@ -7,6 +7,13 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+a{
+    color: gray;
+    text-decoration: none; 
+}
+li:hover{
+    font-weight:600;
+}
 ul{
     display: flex;
     list-style: none;
@@ -43,7 +50,7 @@ li{
     transform: scale(0);
 } 
 header{
-    height: 100vh;
+    height: 100%;
 }
 .container-header{
     background-image: url(assets/img/laranja\ azul\ recorte.png);
@@ -138,11 +145,10 @@ footer{
     justify-content: center;
     background-color:dimgrey;
     position: fixed;
-    top: ;
-    left: ;
     right: 30px;
     bottom: 30px;
 }
-.bnt-top p{
-    color: white;
+#top{
+    color:white;
+    font-weight: 500;
 }
